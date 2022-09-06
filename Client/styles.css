@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #01284a;
+  padding: 8px;
+}
+
+#start {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+  background-color: #000f1c;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #7691a8;
+}
+
+video {
+  width: 100%;
+}
+
+#videos {
+  display: grid;
+  grid-gap: 16px;
+  width: 100%;
+  grid-template-columns: 1fr 3fr;
+}
+
+#self-view {
+  grid-column: 1;
+  background-color: black;
+}
+
+#remote-view {
+  grid-column: 2;
+  background-color: black;
+  height: 95vh;
+}
